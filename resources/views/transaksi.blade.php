@@ -64,7 +64,7 @@ style="background: url('img/hero-bg-4.jpg')no-repeat center center / cover">
                                                             <div class="input-icon">
                                                                 <span class="ti-list"></span>
                                                             </div>
-                                                            <input type="text" name="hp" class="form-control" placeholder="Enter your subject" required>
+                                                            <input type="text" name="hp" class="form-control" placeholder="Enter your phone" required>
                                                         </div>
                                                     </div>
                                                 </div>

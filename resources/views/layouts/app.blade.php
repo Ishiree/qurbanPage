@@ -65,76 +65,21 @@
     <!--start navbar-->
     <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
         <div class="container">
-            <a class="navbar-brand" href="index-5.html">
+            <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="{{ asset('img/logo-gyd.png') }}" width="100" alt="logo" class="img-fluid"/>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ti-menu"></span>
+                <span class=""><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto menu">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle"> Home</a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Home Page 01</a></li>
-                            <li><a href="index-2.html">Home Page 02</a></li>
-                            <li><a href="index-3.html">Home Page 03</a></li>
-                            <li><a href="index-4.html">Home Page 04</a></li>
-                            <li><a href="index-5.html">Home Page 05</a></li>
-                            <li><a href="index-6.html">Home Page 06</a></li>
-                            <li><a href="index-7.html">Home Page 07 <span class="badge color-1 color-1-bg custom-badge"> New</span></a></li>
-                            <li><a href="index-8.html">Home Page 08 <span class="badge color-1 color-1-bg custom-badge"> New</span></a></li>
-                            <li><a href="index-9.html">Home Page 09 <span class="badge color-1 color-1-bg custom-badge"> New</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a  href="#" class="dropdown-toggle">Pages</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Login & Signup</a>
-                                <ul class="sub-menu">
-                                    <li><a href="basic-login.html">Login Page 1</a></li>
-                                    <li><a href="login.html">Login Page 2</a></li>
-                                    <li><a href="basic-sign-up.html">Signup Page 1</a></li>
-                                    <li><a href="sign-up.html">Signup Page 2</a></li>
-                                    <li><a href="password-reset.html">Reset Password</a></li>
-                                    <li><a href="change-password.html">Change Password</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Utilities</a>
-                                <ul class="sub-menu">
-                                    <li><a href="download.html">Download Page</a></li>
-                                    <li><a href="review.html">Review Page</a></li>
-                                    <li><a href="faq.html">FAQ Page</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="coming-soon.html">Coming Soon</a></li>
-                                    <li><a href="thank-you.html">Thank You Page</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Teams  <span class="badge color-1 color-1-bg custom-badge"> New</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="team.html">Team Page</a></li>
-                                    <li><a href="team-single.html">Team Single Page</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Our Blog <span class="badge color-1 color-1-bg custom-badge"> New</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-default.html">Blog Default</a></li>
-                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                    <li><a href="blog-single-right-sidebar.html">Blog Details With Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="partner.html">Our Partner <span class="badge color-1 color-1-bg custom-badge">New</span></a></li>
-                            <li><a href="project-details.html">Project Details <span class="badge color-1 color-1-bg custom-badge">New</span></a></li>
-                            <li><a href="services-details.html">Services Details <span class="badge color-1 color-1-bg custom-badge">New</span></a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="#features" class="page-scroll">Features</a></li>
-                    <li><a href="#how-it-work" class="page-scroll">How It Work</a></li>
-                    <li><a href="#screenshots" class="page-scroll">Screenshots</a></li>
-                    <li><a href="#reviews" class="page-scroll">Reviews</a></li>
-                    <li><a href="#pricing" class="page-scroll">Pricing</a></li>
-                    <li><a href="#faq" class="page-scroll">FAQ</a></li>
-                    <li><a href="#contact" class="page-scroll">Contact Us</a></li>
+                    {{-- <li><a href="#faq" class="page-scroll">FAQ</a></li> --}}
+                    {{-- <li><a href="#proposal" class="page-scroll">Proposal Kegiatan</a></li> --}}
+                    <li><a href="#pilih-hewan" class="page-scroll">Pilih Hewan Qurban</a></li>
+                    <li><a href="#konfirmasi-qurban" class="page-scroll">Konfirmasi Qurban</a></li>
+                    <li><a href="{{ url('galeri') }}" class="page-scroll">Galeri Qurban</a></li>
+                    {{-- <li><a href="#tips-ramadhan" class="page-scroll">Galeri Qurban</a></li> --}}
                 </ul>
             </div>
         </div>

@@ -79,10 +79,10 @@
             </button>
             <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto menu">
-                    <li><a href="#ibadah-ramadhan" class="page-scroll">FAQ</a></li>
-                    <li><a href="#imsakiyah" class="page-scroll">Proposal Kegiatan</a></li>
-                    <li><a href="#program-gyd" class="page-scroll">Pilih Hewan Qurban</a></li>
-                    <li><a href="#tips-ramadhan" class="page-scroll">Konfirmasi Qurban</a></li>
+                    <li><a href="#faq" class="page-scroll">FAQ</a></li>
+                    <li><a href="#proposal" class="page-scroll">Proposal Kegiatan</a></li>
+                    <li><a href="#pilih-hewan" class="page-scroll">Pilih Hewan Qurban</a></li>
+                    <li><a href="#konfirmasi-qurban" class="page-scroll">Konfirmasi Qurban</a></li>
                     <li><a href="{{ url('galeri') }}" class="page-scroll">Galeri Qurban</a></li>
                     {{-- <li><a href="#tips-ramadhan" class="page-scroll">Galeri Qurban</a></li> --}}
                 </ul>
@@ -103,10 +103,9 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-7 col-lg-6">
                     <div class="hero-content-left text-white">
-                        <h1 class="text-white">How We Deliver Digital Experiences</h1>
+                        <h1 class="text-white">Bismillah, Bisa Qurban Lagi !</h1>
                         <p class="lead">
-                            Our design projects are fresh and simple and will benefit your business greatly. Learn more
-                            about our work!
+                            
                         </p>
                     </div>
                 </div>
@@ -127,7 +126,7 @@
                 <div class="col-md-4 col-lg-4">
                     <div class="new-single-promo rounded py-5 px-4 border-top-0 mt-4 white-bg text-center">
                         <div class="promo-img-wrap mb-4">
-                            <img src="img/promo-1.svg" width="80" alt="promo" class="img-fluid"/>
+                            <img src="img/goat.png" width="80" alt="promo" class="img-fluid"/>
                         </div>
                         <div class="promo-content-wrap">
                             <h5>Domba</h5>
@@ -140,12 +139,12 @@
                 <div class="col-md-4 col-lg-4">
                     <div class="new-single-promo rounded py-5 px-4 border-top-0 mt-4 white-bg text-center">
                         <div class="promo-img-wrap mb-4">
-                            <img src="img/promo-2.svg" width="80" alt="promo" class="img-fluid"/>
+                            <img src="img/cow.png" width="80" alt="promo" class="img-fluid"/>
                         </div>
                         <div class="promo-content-wrap">
                             <h5>Sapi</h5>
                             <hr>
-                            <p>Uniquely monetize orthogonal communities via 24/7 benefits. </p>
+                            <p>Bobot 140-146Kg</p>
                             <a href="{{ route('sapi') }}" class="btn solid-btn animated-btn">{{"Rp. " . number_format($sapi->harga, 0, ".", ".") }}</a>
                         </div>
                     </div>
@@ -153,14 +152,12 @@
                 <div class="col-md-4 col-lg-4">
                     <div class="new-single-promo rounded py-5 px-4 border-top-0 mt-4 white-bg text-center">
                         <div class="promo-img-wrap mb-4">
-                            <img src="img/promo-1.svg" width="80" alt="promo" class="img-fluid"/>
+                            <img src="{{ asset('img/patungan-sapi.png') }}" width="80" alt="promo" class="img-fluid"/>
                         </div>
                         <div class="promo-content-wrap">
                             <h5>1/7 Sapi</h5>
                             <hr>
-                            <p>Uniquely monetize orthogonal communities via 24/7 benefits.</p>
-                            {{-- <a class="mayar-button iframe-lightbox-link" href="https://gyd-developer.mayar.link/donate/sedekah-untuk-yatim-dan-dhuafa" data-padding-bottom="30%" data-scrolling="true"><span></span>Sedekah Sekarang</a> --}}
-                            {{-- <a class="mayar-button iframe-lightbox-link" href="https://gyd-developer.mayar.link/pl/qurban-domba" data-padding-bottom="30%" data-scrolling="true"><span></span>Qurban Sekarang</a> --}}
+                            <p>Bobot 20-24Kg</p>
                             <a href="{{ route('patungan-sapi') }}" class="btn solid-btn animated-btn">{{"Rp. " . number_format($patungan_sapi->harga, 0, ".", ".") }}</a>
                         </div>
                     </div>
@@ -169,9 +166,11 @@
         </div>
     </section>
     <!--promo section new end-->
-
+{{-- <a class="mayar-button iframe-lightbox-link" href="https://gyd-developer.mayar.link/donate/sedekah-untuk-yatim-dan-dhuafa" data-padding-bottom="30%" data-scrolling="true"><span></span>Sedekah Sekarang</a> --}}
+                            {{-- <a class="mayar-button iframe-lightbox-link" href="https://gyd-developer.mayar.link/pl/qurban-domba" data-padding-bottom="30%" data-scrolling="true"><span></span>Qurban Sekarang</a> --}}
+                            
     <!--details section start-->
-    {{-- <section class="ptb-100">
+    <section class="ptb-100">
         <div class="container">
             <div class="row justify-content-around align-items-center">
                 <div class="col-md-5 col-lg-5">
@@ -184,13 +183,13 @@
                 </div>
                 <div class="col-md-6 col-lg-7">
                     <div class="detail-info-wrap">
-                        <h2>Qurban Melapangkan Hati</h2>
+                        <h3>Qurban Melapangkan Hati</h3>
                         <p>Berkurban menjadi salah satu cara meningkatkan keimanan pada Allah Swt, dimana dengan melapangkan hati mengeluarkan harta untuk berkurban dan membagikan dagingnya kepada mereka yang membutuhkan.</p>
                         <p> Kurban merupakan sebuah kebaikan bagi seorang muslim, dan amal-amal kebaikan yang dikerjakan seseorang akan menjadi salah satu cara bertambahnya iman seseorang.</p>
                         <div class="row mt-5">
                             <div class="col-md-6 col-lg-6 col-12">
                                 <div class="detail-info-box">
-                                    <span class="d-inline-block mb-4 icon-sm text-white p-3 secondary-bg rounded"><i class="ti ti-palette"></i></span>
+                                    <span class="d-inline-block mb-4 icon-sm text-white p-3 secondary-bg rounded"><img src="{{ asset('img/pray-02.png') }}" width="40"></span>
                                     <div class="detail-info-content">
                                         <h5 class="mb-2">Bentuk Syukur</h5>
                                         <p>Berkurban jadi bentuk syukur hamba pada Allah swt. atas segala kenikmatan yang telah diberikan oleh-Nya.</p>
@@ -199,7 +198,7 @@
                             </div>
                             <div class="col-md-6 col-lg-6 col-12">
                                 <div class="detail-info-box">
-                                    <span class="d-inline-block mb-4 icon-sm text-white p-3 secondary-bg rounded"><i class="ti ti-announcement"></i></span>
+                                    <span class="d-inline-block mb-4 icon-sm text-white p-3 secondary-bg rounded"><img src="{{ asset('img/heart-02.png') }}" width="40" alt=""></span>
                                     <div class="detail-info-content">
                                         <h5 class="mb-2">Hati Tentram</h5>
                                         <p>Hati akan menjadi tentram ketika kita mengingat Allah swt. dan menjalankan syariat-Nya</p>
@@ -211,7 +210,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!--details section end-->
 
     <!--how it work start-->
@@ -226,11 +225,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12">
                     <div class="work-process-wrap">
                         <div class="single-work-process mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                            <div class="work-process-icon-wrap secondary-bg rounded">
-                                <i class="ti-vector icon-md text-white"></i>
+                            <div class="work-process-icon-wrap secondary-bg rounded text-center align-middle">
+                                <img src="{{ asset('img/cow-choice-02.png') }}" width="50" alt="" class="pt-2">
                                 <span class="process-step color-secondary white-bg shadow-sm">1</span>
                             </div>
                             <span class="work-process-divider"></span>
@@ -241,7 +240,7 @@
                         </div>
                         <div class="single-work-process mt-lg-5 mt-md-5 mt-sm-5 mt-5">
                             <div class="work-process-icon-wrap secondary-bg rounded">
-                                <i class="ti-layout-list-thumb icon-md text-white"></i>
+                                <i class="ti-money icon-md text-white"></i>
                                 <span class="process-step color-secondary white-bg shadow-sm">2</span>
                             </div>
                             <span class="work-process-divider"></span>
@@ -252,7 +251,7 @@
                         </div>
                         <div class="single-work-process mt-lg-5 mt-md-5 mt-sm-5 mt-5">
                             <div class="work-process-icon-wrap secondary-bg rounded">
-                                <i class="ti-palette icon-md text-white"></i>
+                                <i class="ti-camera icon-md text-white"></i>
                                 <span class="process-step color-secondary white-bg shadow-sm">3</span>
                             </div>
                             <span class="work-process-divider"></span>
@@ -263,7 +262,7 @@
                         </div>
                         <div class="single-work-process mt-lg-5 mt-md-5 mt-sm-5 mt-5">
                             <div class="work-process-icon-wrap secondary-bg rounded">
-                                <i class="ti-cup icon-md text-white"></i>
+                                <i class="ti-share icon-md text-white"></i>
                                 <span class="process-step color-secondary white-bg shadow-sm">4</span>
                             </div>
                             <span class="work-process-divider"></span>
@@ -288,15 +287,14 @@
                 <div class="col-md-12">
                     <div class="section-heading text-center mb-5">
                         <h2>Keutamaan Qurban</h2>
-                        {{-- <p>Berqurban merupakan amalan yang sangat istimewa. Akan banyak keistimewaan yang didapatkan oleh orang-orang yang berqurban. </p> --}}
                     </div>
                     <div class="feature-content-wrap">
                         <div class="tab-pane active" id="tab6-1">
                             <div class="row align-items-center justify-content-center pt-5">
                                 <div class="col-md-5 col-lg-5">
-                                    <div class="new-single-promo rounded p-5 border-color-1 mt-4 text-center">
+                                    <div class="new-single-promo rounded p-5 border-color-3 mt-4 text-center">
                                         <div class="tab-content-wrap">
-                                            <span class="h1 display-3 color-secondary font-weight-bold mb-3 d-block text-center">01</span>
+                                            <span class="h1 display-3 color-orange font-weight-bold mb-3 d-block text-center">01</span>
                                             <h3>Sebagai Wujud Peduli Sesama</h3>
                                             <p>Dengan Qurban yang kamu tunaikan, banyak orang yang mendapatkan manfaatnya. Dengan qurban, tebarkan kebahagiaan untuk yatim dan dhuafa. 
                                                 Agar semakin banyak hati yang gembira dan senyuman pun tulus terpancar. Sebagai wujud peduli dengan sesama, qurbanmu menambah kebahagiaan di hari yang penuh bahagia. </p>
@@ -308,14 +306,13 @@
 
                                 </div>
                                 <div class="col-md-5 col-lg-5">
-                                    <div class="new-single-promo rounded p-5 border-color-1 mt-4 text-center">
+                                    <div class="new-single-promo rounded p-5 border-color-3 mt-4 text-center">
                                         <div class="tab-content-wrap">
-                                            <span class="h1 display-3 color-secondary font-weight-bold mb-3 d-block text-center">02</span>
+                                            <span class="h1 display-3 color-orange font-weight-bold mb-3 d-block text-center">02</span>
                                             <h3>Amalan Paling Utama di Idul Adha</h3>
                                             <p>“Tidak ada suatu amalan yang paling dicintai oleh Allah dari Bani Adam ketika hari raya Idul Adha selain menyembelih hewan kurban. Sesungguhnya hewan itu akan datang pada hari kiamat (sebagai saksi) 
                                                 dengan tanduk, bulu, dan kukunya. Dan sesungguhnya darah hewan kurban telah terletak di suatu tempat di sisi Allah sebelum mengalir di tanah. Karena itu, 
                                                 bahagiakan dirimu dengannya.” (HR. Tirmidzi, Ibnu Majah, dan Hakim)</p>
-                                            {{-- <p>Quickly communicate multimedia based materials for enabled channels. Seamlessly disintermediate robust best practices for B2C e-tailers. Efficiently procrastinate prospective experiences.</p> --}}
                                             <a href="#" class="mt-3 d-flex align-items-center">Learn more about this <span class="ti-angle-right ml-2"></span></a>
                                         </div>
                                     </div>
@@ -325,9 +322,9 @@
                         <div class="tab-pane active" id="tab6-1">
                             <div class="row align-items-center justify-content-center pt-5">
                                 <div class="col-md-5 col-lg-5">
-                                    <div class="new-single-promo rounded p-5 border-color-1 mt-4 text-center">
+                                    <div class="new-single-promo rounded p-5 border-color-3 mt-4 text-center">
                                         <div class="tab-content-wrap">
-                                            <span class="h1 display-3 color-secondary font-weight-bold mb-3 d-block text-center">03</span>
+                                            <span class="h1 display-3 color-orange font-weight-bold mb-3 d-block text-center">03</span>
                                             <h3>1 Bulu Hewan Qurban = 1 Kebaikan</h3>
                                             <p>Rasulullah bersabda : “Sunnah (tuntunan) bapak kalian, Ibrahim. Setiap rambutnya adalah satu kebaikan setiap rambut dari bulunya adalah kebaikan”. (HR. Abu Dawud)</p>
                                             <a href="#" class="mt-3 d-flex align-items-center">Learn more about this <span class="ti-angle-right ml-2"></span></a>
@@ -338,10 +335,10 @@
 
                                 </div>
                                 <div class="col-md-5 col-lg-5">
-                                    <div class="new-single-promo rounded p-5 border-color-1 mt-4 text-center">
+                                    <div class="new-single-promo rounded p-5 border-color-3 mt-4 text-center">
                                         <div class="tab-content-wrap">
-                                            <span class="h1 display-3 color-secondary font-weight-bold mb-3 d-block text-center">04</span>
-                                            <h3>Menyelamatkan dari Bahaya Dunia Akherat</h3>
+                                            <span class="h1 display-3 color-orange font-weight-bold mb-3 d-block text-center">04</span>
+                                            <h3>Aman dari Bahaya Dunia Akherat</h3>
                                             <p>Ingatlah bahwa kurban itu termasuk amal-amal penyelamat, yang menyelamatkan pemiliknya dari kejelekan dunia dan bahaya di akherat” (Zubdatul wa’idhin).</p>
                                             <a href="#" class="mt-3 d-flex align-items-center">Learn more about this <span class="ti-angle-right ml-2"></span></a>
                                         </div>
@@ -356,8 +353,20 @@
     </section>
     <!--feature section tab style end-->
 
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="row justify-content-around align-items-end">
+                <div class="col-12">
+                    <div class="d-flex align-items-end my-5">
+                        <img src="img/qurban1.png" class="img-fluid" alt="download"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--pricing section start-->
-    <section id="pricing" class="pricing ptb-100 gray-light-bg">
+    <section id="pilih-hewan" class="pricing ptb-100 gray-light-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-8">
@@ -439,7 +448,7 @@
                 <div class="screenshot-noframe"></div>
                 <div class="screen-carousel owl-carousel owl-theme dot-indicator">
                     <img src="{{ asset('img/WhatsApp Image 2021-04-28 at 21.56.02 (1).jpeg') }}" class="img-fluid" alt="screenshots"/>
-                    <img src="{{ asset('img/WhatsApp Image 2021-05-08 at 14.46.15.jpeg') }}" class="img-fluid" alt="screenshots"/>
+                    {{-- <img src="{{ asset('img/WhatsApp Image 2021-05-08 at 14.46.15.jpeg') }}" class="img-fluid" alt="screenshots"/> --}}
                     <img src="{{ asset('img/WhatsApp Image 2021-05-10 at 13.34.32 (1).jpeg') }}" class="img-fluid" alt="screenshots"/>
                     <img src="{{ asset('img/WhatsApp Image 2021-05-10 at 13.37.18.jpeg') }}" class="img-fluid" alt="screenshots"/>
                     <img src="{{ asset('img/WhatsApp Image 2021-05-10 at 13.39.31.jpeg') }}" class="img-fluid" alt="screenshots"/>
@@ -452,7 +461,7 @@
     <!--screenshots section end-->
 
     <!--download section start-->
-    <section id="download" class="download-section gradient-overlay" style="background: url('img/hero-bg-4.jpg')no-repeat center center / cover fixed">
+    <section id="proposal" class="download-section gradient-overlay" style="background: url('img/hero-bg-4.jpg')no-repeat center center / cover fixed">
         <div class="container">
             <div class="row justify-content-around align-items-end">
                 <div class="col-md-12 col-lg-6">
@@ -465,8 +474,7 @@
                         Dalam proposal ini, kami jelaskan secara merinci mengenai program-program dan tujuannya dengan harapan besar Sahabat ikut membersamai kami membahagiakan anak-anak Yatim dan Dhuafa.     
                         </p>
                         <div class="action-btns download-btn mt-4">
-                            <a href="#" class="btn solid-white-btn mr-3"> <span class="ti-apple mr-2"></span> Dapatkan Proposal</a>
-                            {{-- <a href="#" class="btn outline-white-btn"> <span class="ti-android mr-2"></span> Play Store</a> --}}
+                            <a href="#" class="btn solid-white-btn mr-3"> <span class="ti-book mr-2"></span> Dapatkan Proposal</a>
                         </div>
                     </div>
                 </div>
@@ -590,8 +598,25 @@
         </div>
     </section> --}}
     <!--testimonial section end-->
+
+        <div class="container">
+            <div class="row justify-content-center my-5 embed-bg">
+                <div class="col-lg-6 col-md-5">
+                    <div class="embed-responsive embed-responsive-16by9 my-5 shadow rounded">
+                    <iframe class="embed-responsive-item" width="6000" height="auto" src="https://www.youtube.com/embed/Vp0jInKB7NY" title="Qurban 1441 H" frameborder="3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>            
+                </div>
+                <div class="col-lg-4 col-md-5 text-left">
+                    <h3 class="example display-4 color-white font-weight-bold mb-3 d-block my-4" >Dokumentasi SOQ</h3>
+                    <p class="text-white">Qurbanmu tahun lalu, sudah dirasakan manfaatnya oleh ribuan orang yang membutuhkan. Ayo tunaikan qurban di tahun ini, dan bantu lebih banyak orang yang membutuhkan.</p>
+                    <div class="btn solid-btn shadow mb-5">Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+
+
         <!--faq section start-->
-        <div id="faq" class="ptb-100">
+        <div id="faq" class="my-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-lg-8">
@@ -668,7 +693,7 @@
         </div>
         <!--faq section end-->
             <!--contact us section start-->
-    <section id="contact" class="contact-us-section contact-us ptb-100">
+    <section id="konfirmasi-qurban" class="contact-us-section contact-us ptb-100">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-md-6">
@@ -753,8 +778,19 @@
     </section>
     <!--contact us section end-->
 
+    
+
 </div>
 <!--body content wrap end-->
+<a href="https://wa.me/6289606090609" class="float solid-btn-orange" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+    </a>
+<!--bottom to top button start-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="ti-angle-up"></span>
+</button>
+<!--bottom to top button end-->
+
 
 <!--footer section start-->
 <footer class="footer-section">
@@ -822,11 +858,6 @@
 </footer>
 <!--footer section end-->
 
-<!--bottom to top button start-->
-<button class="scroll-top scroll-to-target" data-target="html">
-    <span class="ti-angle-up"></span>
-</button>
-<!--bottom to top button end-->
 
 {{-- <script type="text/javascript" src="https://mayar.id/mayar-min.js"></script>
 <script type="text/javascript" src="https://mayar.id/mayar-min.js"></script> --}}
